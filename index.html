@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="favicon.ico">
-    <title>cppda-ar-unity</title>
+    <title>WebAR Test</title>
     <style>
         html {
             box-sizing: border-box;
@@ -137,21 +137,21 @@
         var db = indexedDB.open("dummy_indexdb", 1); // iOS 14.6 fix; the call to open indexdb hangs forever otherwise
 
         const buildUrl = "Build";
-        const loaderUrl = buildUrl + "/5c03f6654a498ad91e5b30bb7a107f31.loader.js";
+        const loaderUrl = buildUrl + "/WebGLTest.loader.js";
         const config = {
-            dataUrl: buildUrl + "/2624d8cda17f25fbcc6e006b198389d7.data",
-            frameworkUrl: buildUrl + "/59917d933abefa39f60275784376e76f.framework.js",
-            codeUrl: buildUrl + "/a43fec257c54bf7ce014fa03abf89867.wasm",
+            dataUrl: buildUrl + "/WebGLTest.data",
+            frameworkUrl: buildUrl + "/WebGLTest.framework.js",
+            codeUrl: buildUrl + "/WebGLTest.wasm",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
-            productName: "cppda-ar-unity",
-            productVersion: "0.1.0",
+            productName: "WebAR Test",
+            productVersion: "0.1",
         //Useful when used along with Filename as Hashes option
             cacheControl: function (url) {
             // typically includes: .data, .bundle, .zpt
             if (url.match(/\.data/) || url.match(/\.bundle/) || url.match(/\.zpt/)) {
-             return "immutable";
-}
+             return "must-revalidate";
+            }
    
             if (url.match(/\.mp4/) || url.match(/\.custom/) || url.match(/\.zbin/)) {
                 return "immutable";
