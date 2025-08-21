@@ -137,11 +137,11 @@
         var db = indexedDB.open("dummy_indexdb", 1); // iOS 14.6 fix; the call to open indexdb hangs forever otherwise
 
         const buildUrl = "Build";
-        const loaderUrl = buildUrl + "/WebGLTest.loader.js";
+        const loaderUrl = buildUrl + "/90df754b8a80a2d439fd59be024bb228.loader.js";
         const config = {
-            dataUrl: buildUrl + "/WebGLTest.data",
-            frameworkUrl: buildUrl + "/WebGLTest.framework.js",
-            codeUrl: buildUrl + "/WebGLTest.wasm",
+            dataUrl: buildUrl + "/28b62dc66da53ac4e6975ab554cbfb4a.data",
+            frameworkUrl: buildUrl + "/59f0da2f9fd21c6df72386a4895db02c.framework.js",
+            codeUrl: buildUrl + "/50bfa5864176ccd2433c70420c0961ed.wasm",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "cppda-ar-unity",
@@ -150,8 +150,8 @@
             cacheControl: function (url) {
             // typically includes: .data, .bundle, .zpt
             if (url.match(/\.data/) || url.match(/\.bundle/) || url.match(/\.zpt/)) {
-             return "must-revalidate";
-            }
+             return "immutable";
+}
    
             if (url.match(/\.mp4/) || url.match(/\.custom/) || url.match(/\.zbin/)) {
                 return "immutable";
