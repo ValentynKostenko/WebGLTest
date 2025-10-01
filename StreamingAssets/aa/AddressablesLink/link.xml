@@ -1,6 +1,5 @@
 <linker>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="QualiumSystems.PersonView" preserve="all" />
     <type fullname="QualiumSystems.Scripts.Scenario.Scenario" preserve="all" />
     <type fullname="QualiumSystems.Scripts.Scenario.ScenarioData" preserve="all" />
     <type fullname="QualiumSystems.Scripts.Scenario.Scenarios" preserve="all" />
@@ -16,7 +15,6 @@
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.SceneProvider" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="UnityEngine.ComputeShader" preserve="all" />
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Mesh" preserve="all" />
