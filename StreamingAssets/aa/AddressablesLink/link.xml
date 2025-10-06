@@ -3,6 +3,7 @@
     <type fullname="QualiumSystems.Scripts.Scenario.Scenario" preserve="all" />
     <type fullname="QualiumSystems.Scripts.Scenario.ScenarioData" preserve="all" />
     <type fullname="QualiumSystems.Scripts.Scenario.Scenarios" preserve="all" />
+    <type fullname="QualiumSystems.Scripts.Scenario.Person" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
